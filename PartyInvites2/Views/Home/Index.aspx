@@ -7,8 +7,10 @@
     <title>Index</title>
 </head>
 <body>
-    <div>
-    <% =ViewData["greeting"] %>, world (from the view)!        
-    </div>
+    <p>
+    <% =ViewData["greeting"] %>! We're going to have an exciting party. 
+    (To do: sell it better. Add picture or something.)        
+    </p>
+    <%= Html.ActionLink("RSVP Now", "RSVPForm") %>
 </body>
 </html>
